@@ -1,0 +1,54 @@
+@use 'sass:map' as m; 
+@use 'globals' as g;
+img{
+    max-width: 100%;
+    height: auto;
+}
+a{
+    text-decoration: none;
+
+}
+.logo {
+    width: 2em;
+}
+.profile{
+    width:12em;
+}
+.header-font{
+    color:white;
+}
+.header-font-1{
+    font-size:1rem;
+    color:rgb(168, 168, 168);
+    font-weight: 500;
+}
+.holder-image{
+    width:100%;
+}
+.navigation-link-cta{
+    background: m.get(g.$colors,'cta');
+    padding: m.get(g.$spacing,'sm-2');
+    color:white;
+}
+.navigation-link-outline{
+    color:white;
+    padding: m.get(g.$spacing,'sm-2');
+    border:0.2px solid rgb(170, 170, 170);
+}
+.activities-title{
+    font-size:m.get(g.$units,'r-size-1');
+}
+.activities-desc{
+    color: rgb(172, 172, 172);
+    font-size:m.get(g.$spacing,'sm-4');
+}
+.social-icon{
+    color:white;
+    font-size: m.get(g.$units,'r-size-2');
+}
+.social-links{
+    padding-block:m.get(g.$spacing,'md-1')
+}
+.highlight{
+    color:m.get(g.$colors,'cta')
+}
